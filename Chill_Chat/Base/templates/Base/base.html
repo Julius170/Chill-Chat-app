@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>{% block title %} {% endblock %}Chill_Chat</title>
+    <style>
+        .chat-messages {
+            height:400px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 
     <body class="bg-teal-600">
@@ -34,6 +40,9 @@
 
 
         {% block content %}
+        {% endblock %}
+        
+        {% block scripts %}
         {% endblock %}
     </body>
 

@@ -15,9 +15,8 @@ def signup(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect ('frontpage')
+            return redirect ('firstpage')
     else:
 
         form = SignUpForm()
     return render(request, 'Base/signup.html', {'form': form})
-
